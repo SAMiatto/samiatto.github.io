@@ -1,0 +1,183 @@
+
+@import url(https://fonts.googleapis.com/css?family=Overlock:400,400italic,700italic,700,900italic,900);
+@import url(https://fonts.googleapis.com/css?family=Overlock+SC);
+
+body {
+  background-color: #f8f9fa;
+  padding: 50px;
+  font: 19px/1.5 "Overlock", sans-serif;
+  color: #071330;
+  font-weight: 400;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+#news ul li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0f3 ";
+  font-weight:400;
+}
+
+#upcoming ul li:before {
+  content: "— ";
+}
+
+#preprints ul li:before {
+  content: "— ";
+}
+
+#publications ol h3 {
+  position: relative;
+  left: -40px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+h1, h2, h3 {
+  margin:0 0 20px;
+  font-weight:700;
+  line-height:1.1;
+}
+
+h1 {
+  font-family: "Overlock SC", sans-serif;
+  font-size:30px;
+}
+
+a {
+  color: #0c7489;
+  text-decoration:none;
+}
+
+a:hover {
+  color: #119da4;
+}
+
+.wrapper {
+  width:1120px;
+  margin:0 auto;
+}
+
+header {
+  width:300px;
+  float:left;
+  position:fixed;
+  text-align: right;
+  -webkit-font-smoothing:subpixel-antialiased;
+  padding-bottom: 2px;
+}
+
+header img {
+  width: 210px;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  display: inline;
+}
+
+header ul li i {
+  padding-left: 5px;
+}
+
+strong {
+  color:#0C4160;
+  font-weight:700;
+}
+
+section {
+  width:746px;
+  padding-top:0px;
+  padding-left: 25px;
+  padding-right: 25px;
+  float:right;
+  padding-bottom:25px;
+}
+
+small {
+  font-size:14px;
+}
+
+h3 small {
+  font-size:15px;
+}
+
+h1 small {
+  font-size:19px;
+}
+
+hr {
+  border:0;
+  background:#F5F3F4;
+  height:1px;
+  margin:0 0 20px;
+}
+
+footer {
+  width:210px;
+  float:left;
+  position:fixed;
+  text-align: right;
+  bottom:0px;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
+
+footer {
+  font-size: 12px;
+}
+
+
+@media print, screen and (max-width: 1000px) {
+
+  div.wrapper {
+    width:auto;
+    margin:0;
+  }
+
+  header, section, footer {
+    float:none;
+    position:static;
+    width:auto;
+  }
+
+  header, footer {
+    text-align: center;
+    background-color: #f8f9fa;
+    margin-top: -20px;
+    margin-bottom: 10px;
+  }
+
+  header {
+    padding-top: 10px;
+  }
+
+  section {
+    padding-top: 20px;
+    margin-bottom: 0;
+  }
+
+  header ul {
+    padding: 0;
+  }
+
+}
+
+@media print, screen and (max-width: 480px) {
+  body {
+    padding:15px;
+    padding-top: 40px;
+  }
+}
+
+@media print {
+  body {
+    padding:0.4in;
+    font-size:12pt;
+    color:#071330;
+  }
+}
