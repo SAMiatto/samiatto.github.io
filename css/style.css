@@ -10,6 +10,10 @@ body {
   font-weight: 400;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 ul li {
   list-style-type: none;
 }
@@ -17,15 +21,8 @@ ul li {
 #news ul li:before {
   font-family: "Font Awesome 5 Free";
   content: "\f0f3 ";
-  font-weight:400;
-}
-
-#upcoming ul li:before {
-  content: "— ";
-}
-
-#preprints ul li:before {
-  content: "— ";
+  font-weight: 400;
+  margin-left: -20px;
 }
 
 #publications ol h3 {
@@ -36,19 +33,19 @@ ul li {
 }
 
 h1, h2, h3 {
-  margin:0 0 20px;
-  font-weight:700;
-  line-height:1.1;
+  margin: 0 0 20px;
+  font-weight: 700;
+  line-height: 1.1;
 }
 
 h1 {
   font-family: "Overlock SC", sans-serif;
-  font-size:30px;
+  font-size: 30px;
 }
 
 a {
   color: #0c7489;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 a:hover {
@@ -56,14 +53,14 @@ a:hover {
 }
 
 .wrapper {
-  width:1120px;
-  margin:0 auto;
+  width: 1120px;
+  margin: 0 auto;
 }
 
 header {
-  width:300px;
-  float:left;
-  position:fixed;
+  width: 300px;
+  float: left;
+  position: fixed;
   text-align: right;
   -webkit-font-smoothing:subpixel-antialiased;
   padding-bottom: 2px;
@@ -86,45 +83,45 @@ header ul li i {
 }
 
 strong {
-  color:#0C4160;
-  font-weight:700;
+  color: #0C4160;
+  font-weight: 700;
 }
 
 section {
-  width:746px;
-  padding-top:0px;
+  width: 746px;
+  padding-top: 0px;
   padding-left: 25px;
   padding-right: 25px;
-  float:right;
-  padding-bottom:25px;
+  float: right;
+  padding-bottom: 25px;
 }
 
 small {
-  font-size:14px;
+  font-size: 14px;
 }
 
 h3 small {
-  font-size:15px;
+  font-size: 15px;
 }
 
 h1 small {
-  font-size:19px;
+  font-size: 19px;
 }
 
 hr {
-  border:0;
-  background:#F5F3F4;
-  height:1px;
-  margin:0 0 20px;
+  border: 0;
+  background: #F5F3F4;
+  height: 1px;
+  margin: 0 0 20px;
 }
 
 footer {
-  width:210px;
-  float:left;
-  position:fixed;
+  width: 210px;
+  float: left;
+  position: fixed;
   text-align: right;
-  bottom:0px;
-  -webkit-font-smoothing:subpixel-antialiased;
+  bottom: 0px;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 footer {
@@ -135,14 +132,14 @@ footer {
 @media print, screen and (max-width: 1000px) {
 
   div.wrapper {
-    width:auto;
-    margin:0;
+    width: auto;
+    margin: 0;
   }
 
   header, section, footer {
-    float:none;
-    position:static;
-    width:auto;
+    float: none;
+    position: static;
+    width: auto;
   }
 
   header, footer {
@@ -169,15 +166,15 @@ footer {
 
 @media print, screen and (max-width: 480px) {
   body {
-    padding:15px;
+    padding: 15px;
     padding-top: 40px;
   }
 }
 
 @media print {
   body {
-    padding:0.4in;
-    font-size:12pt;
-    color:#071330;
+    padding: 0.4in;
+    font-size: 12pt;
+    color: #071330;
   }
 }
